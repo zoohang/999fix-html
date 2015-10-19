@@ -166,11 +166,29 @@ body{margin: 0 auto;}
 	background-color: #f2f7fa;
 }
 .lunbo_brand{
-	height: 135px;
-}
-.swiper-container{
-	margin-top: 30px;
+	margin: 40px auto;
 }
 .swiper-slide{
 	margin-left: 3px;
+}
+.zhuanye_div{
+	background-color: #f1f1f1;
+	overflow: hidden;
+}
+.baozheng_title{
+		margin-top: 30px;
+		font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+.baozheng_why{
+	margin: 20px 0 30px;
+	color: #4cbd55;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	letter-spacing: 20px;
+}
+.baozheng_obj{
+	float: left;
 }
