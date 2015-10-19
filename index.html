@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+</head>
+<body>
+	
+	<div class="w1142 header">
+		<div class="top logo">
+			<a href="./"><img src="images/index_03.png" alt=""></a>
+		</div>
+		<div class="top nav">
+			<div class="nav_list">
+				<a href="./"><div class="nav_one cur">首页</div></a>
+				<a href=""><div class="nav_one">商城</div></a>
+				<a href=""><div class="nav_one">论坛</div></a>
+				<a href=""><div class="nav_one">报价</div></a>
+				<a href=""><div class="nav_one">经销商</div></a>
+				<a href=""><div class="nav_one">关于我们</div></a>
+			</div>
+			
+		</div>
+		<div class="top">
+			<img src="images/index_11.png" alt="">
+		</div>
+		<div class="top word_time noright">
+			Saturday - Thursday
+			[10:00AM - 8:00PM]
+		</div>
+		<div class="top search">
+			<input type="text" name="" placeholder="单号查询">
+			<img src="images/index_06.png" alt="">
+		</div>
+		<div class="top lang noright">
+			<img src="images/index_08.png" alt="">
+		</div>
+	</div>
+	
+	<div class="w1366 banner">
+		<div class="banner_title f35">submit your order</div>
+		<div class="banner_title f28">寻找你们家最近的服务网点</div>
+		<div class="index_order">
+			<div class="order_btn device_type">设备类型<img src="images/down.png" alt="">
+				<div class="order_option">
+					<p class="option_title">选择你送修的设备类型</p>
+					<p class="option_row yuan">设备类型</p>
+					<p class="option_row">笔记本</p>
+					<p class="option_row">手机</p>
+					<p class="option_row">平板</p>
+					<p class="option_row">数据恢复</p>
+				</div>
+			</div>
+			
+			<div class="order_btn brand">品牌<img src="images/down.png" alt="">
+				<div class="order_option">
+					<p class="option_title">选择你送修的设备的品牌</p>
+					<p class="option_row yuan">品牌</p>
+					<p class="option_row">诺基亚</p>
+					<p class="option_row">苹果</p>
+					<p class="option_row">小米</p>
+					<p class="option_row">三星</p>
+				</div>
+			</div>
+			<div class="order_btn fault">故障<img src="images/down.png" alt="">
+				<div class="order_option">
+					<p class="option_title">选择你送修的设备的故障</p>
+					<p class="option_row yuan">故障</p>
+					<p class="option_row">进水</p>
+					<p class="option_row">无信号</p>
+					<p class="option_row">屏幕碎裂</p>
+					<p class="option_row">无法开机</p>
+				</div>
+			</div>
+			<div class="order_btn submit">提交订单<img src="images/right.png" alt=""></div>
+			<div style="clear:both;"></div>
+		<p class="order_tips">By signing up you agree to <a href="#">our terms of service.</a></p>
+		</div>
+	</div>
+
+	<div class="w1222 lunbo_brand">
+		<div class="swiper-container">
+    		<div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/index_18.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/index_20.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/index_22.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/index_18.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/index_20.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/index_22.png" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-button-prev"></div>
+    		<div class="swiper-button-next"></div>
+    </div>
+	</div>
+	<script type="text/javascript">
+		var swiper = new Swiper('.swiper-container', {
+        //pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 5,
+        centeredSlides: true,
+        paginationClickable: true,
+        spaceBetween: 0,
+        loop : true,
+        //autoplay: 2500,
+    });
+	</script>
+</body>
+</html>

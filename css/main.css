@@ -1,0 +1,176 @@
+@charset "utf-8";
+body,ul,div,p,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;font-family: 微软雅黑;}
+a,a:hover,a:active,a:visited{text-decoration: none;color: #333;}
+li{list-style: none;}
+body{margin: 0 auto;}
+.w1360{
+	width: 1360px;
+	margin: 0 auto;
+}
+.w1222{
+	width: 1222px;
+	margin: 0 auto;
+}
+.w1142{
+	width: 1142px;
+	margin: 0 auto;
+}
+.banner{
+	min-height: 470px;
+	background: url('../images/index_banner.jpg') no-repeat;
+	background-position: center;
+
+}
+.top{
+	float: left;
+	margin-right: 15px;
+}
+.nav{
+	margin-left: 40px;
+}
+.nav_one{
+	float: left;
+	padding: 0 10px;
+}
+.nav_one:hover{
+	background-color: #eee;
+}
+.cur{
+	background-color: #eee;
+}
+.header{
+	height: 80px;
+	line-height: 80px;
+}
+.top img{
+	vertical-align: middle;
+}
+.word_time{
+	width: 155px;
+	line-height: 16px;
+	margin-top: 22px;
+	font-size: 12px;
+	color: #999;
+}
+.noright{
+	margin-right: 0;
+}
+.search input{
+	width: 90px;
+	height: 26px;
+	outline: none;
+}
+.search img{
+	margin-left: -6px;
+	height: 32px;
+}
+.banner_title{
+	text-align: center;
+	color: #fff;
+	letter-spacing: 10px;
+}
+.f35{
+	font-size: 35px;
+}
+.f28{
+	font-size: 28px;
+}
+.banner .f35{
+	position: relative;
+	top: 100px;
+}
+.banner .f28{
+	position: relative;
+	top: 120px;
+}
+.nav_list{
+	height: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 26px;
+}
+.index_order{
+    position: relative;
+    top: 200px;
+    height: 135px;
+    width: 960px;
+    background-color: #fff;
+    margin: auto;
+}
+.order_btn{
+	float: left;
+	width: 195px;
+	height: 54px;
+	line-height: 54px;
+	font-family: 黑体;
+	font-weight: bold;
+	font-size: 22px;
+	border: 1px solid #cbcbcb;
+	background-color: #f2f7fa;
+	margin-left: 22px;
+	margin-top: 40px;
+	cursor: pointer;
+	padding-left: 15px;
+	color: #77a0bc;
+	position: relative;
+}
+.order_btn img{
+	float: right;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+.submit{
+	background-color: #7cbb52;
+	border-radius: 3px;
+	font-weight: normal;
+	font-family: 微软雅黑;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+.order_tips{
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+	margin-top: 10px;
+}
+.order_tips a{
+	color: #3faed8;
+}
+.order_option{
+	display: none;
+		width: 210px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 5px solid #78b450;
+    position: absolute;
+    left: -5px;
+    top: -59px;
+    background-color: #78b450;
+}
+.option_title{
+	color: #fff;
+	font-weight: normal;
+	font-size: 18px;
+	text-align: center;
+}
+.option_row{
+	color: #77a0bc;
+	background-color: #eaecf8;
+	padding-left: 15px;
+	border-bottom: 2px solid #fff;
+	font-size: 20px;
+}
+.option_row:hover{
+	background-color: #f2f7fa;
+}
+.lunbo_brand{
+	height: 135px;
+}
+.swiper-container{
+	margin-top: 30px;
+}
+.swiper-slide{
+	margin-left: 3px;
+}
