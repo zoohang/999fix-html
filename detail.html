@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+</head>
+<body>
+	
+	<div class="w1142 header">
+		<div class="top logo">
+			<a href="./"><img src="images/index_03.png" alt=""></a>
+		</div>
+		<div class="top nav">
+			<div class="nav_list">
+				<a href="./"><div class="nav_one cur">首页</div></a>
+				<a href=""><div class="nav_one">商城</div></a>
+				<a href=""><div class="nav_one">论坛</div></a>
+				<a href=""><div class="nav_one">报价</div></a>
+				<a href=""><div class="nav_one">经销商</div></a>
+				<a href=""><div class="nav_one">关于我们</div></a>
+			</div>
+			
+		</div>
+		<div class="top">
+			<img src="images/index_11.png" alt="">
+		</div>
+		<div class="top word_time noright">
+			Saturday - Thursday
+			[10:00AM - 8:00PM]
+		</div>
+		<div class="top search">
+			<input type="text" name="" placeholder="单号查询">
+			<img src="images/index_06.png" alt="">
+		</div>
+		<div class="top lang noright">
+			<img src="images/index_08.png" alt="">
+		</div>
+	</div>
+
+	<div class="w1366">
+		<div class="w1142">
+			<div class="service_title">导航目录</div>
+
+			<div class="tab">
+				<div class="tabList">
+					<ul>
+						<li class="cur">网点</li>
+						<li>提交订单</li>
+						<li>单号查询</li>
+						<li>经销商登陆</li>
+						<li>经销商申请</li>
+					</ul>
+				</div>
+
+				<div class="tabCon">
+					<div class="cur">断桥残雪、千百度、幻听、想象之中</div>
+					<div>红尘客栈、牛仔很忙、给我一首歌的时间、听妈妈的话</div>
+					<div>被风吹过的夏天、江南、一千年以后</div>
+					<div>十年、K歌之王、浮夸</div>
+					<div>被风吹过的夏天、江南、一千年以后</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<div class="w1360 footer">
+		<div class="w1142 footer_main">
+			<div class="footer_element footer_contact">
+				<p class="footer_contact_title">联系方式</p>
+				<p class="footer_contact_content">doctorconputer@999fix.com</p>
+				<p class="footer_contact_content">04-2211553</p>
+				<p class="footer_contact_content">IT Center shop33#</p>
+				<p class="footer_contact_content">301 3nd Floor，Sh Rashid Build</p>
+			</div>
+			<div class="footer_element foot_share">
+				<div class="foot_share_logo">
+					<a href=""><img src="images/index_95.png" alt=""></a>
+					<a href=""><img src="images/index_97.png" alt=""></a>
+					<a href=""><img src="images/index_92.png" alt=""></a>
+				</div>
+				<img class="foot_star" src="images/index_105.png" alt="">
+			</div>
+			<div class="footer_element oot_copyright noright">
+				<div class="foot_my_logo">
+					<img src="images/index_91.png" alt="">
+				</div>
+				<p class="this_site"><a href="./">www.999fix.com</a></p>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+window.onload = function() {
+    var oDiv = $('.tab,.tab2');
+    var oLi = oDiv.children('div')[0].getElementsByTagName("li");
+    var aCon = oDiv.children('div')[1].getElementsByTagName("div");
+    var timer;
+    for (var i = 0; i < oLi.length; i++) {
+        oLi[i].index = i;
+        oLi[i].onclick = function() {
+            show(this.index);
+        }
+    }
+    function show(a) {
+        index = a;
+        var alpha = 0;
+        for (var j = 0; j < oLi.length; j++) {
+            oLi[j].className = "";
+            aCon[j].className = "";
+            aCon[j].style.opacity = 0;
+            aCon[j].style.display = 'none';
+            aCon[j].style.filter = "alpha(opacity=0)";
+        }
+        oLi[index].className = "cur";
+        clearInterval(timer);
+        timer = setInterval(function() {
+            alpha += 2;
+            alpha > 100 && (alpha = 100);
+            aCon[index].style.opacity = alpha / 100;
+            aCon[index].style.display = 'block';
+            aCon[index].style.filter = "alpha(opacity=" + alpha + ")";
+            alpha == 100 && clearInterval(timer);
+        },
+        5)
+    }
+}
+</script>
+</body>
+</html>
