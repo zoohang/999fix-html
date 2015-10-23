@@ -42,22 +42,24 @@
 	</div>
 
 	<div class="w1366">
-		<div class="w1142">
-			<div class="service_title">导航目录</div>
 
-			<div class="tab">
+		<div class="w1142 detail">
+			<div class="service_title">导航目录</div>
+			<div class="tab" id="tab">
 				<div class="tabList">
 					<ul>
 						<li class="cur">网点</li>
 						<li>提交订单</li>
 						<li>单号查询</li>
 						<li>经销商登陆</li>
-						<li>经销商申请</li>
+						<li id="noright">经销商申请</li>
 					</ul>
 				</div>
 
 				<div class="tabCon">
-					<div class="cur">断桥残雪、千百度、幻听、想象之中</div>
+					<div class="cur">
+            <img src="images/google_map.png">     
+          </div>
 					<div>红尘客栈、牛仔很忙、给我一首歌的时间、听妈妈的话</div>
 					<div>被风吹过的夏天、江南、一千年以后</div>
 					<div>十年、K歌之王、浮夸</div>
@@ -66,6 +68,40 @@
 				</div>
 			</div>
 		</div>
+
+    <div class="w1142 detail">
+      <div class="service_title">服务流程</div>
+      <div class="process_tips">建议把故障的设备递交给我们的网店，假如附近没有网点，请电话预约（04-2211553）</div>
+      <div class="liucheng">
+        <img src="images/liuchegn.png">
+      </div>
+    </div>
+
+    <div class="w1142 detail">
+      <div class="service_title">维修报价</div>
+      <div class="tab" id="tab2">
+        <div class="tabList">
+          <ul>
+            <li class="cur">笔记本</li>
+            <li>手机</li>
+            <li>数据恢复</li>
+            <li>维修收费</li>
+            <li id="noright">官方声明</li>
+          </ul>
+        </div>
+
+        <div class="tabCon">
+          <div class="cur">
+            <img src="images/google_map.png">     
+          </div>
+          <div>红尘客栈、牛仔很忙、给我一首歌的时间、听妈妈的话</div>
+          <div>被风吹过的夏天、江南、一千年以后</div>
+          <div>十年、K歌之王、浮夸</div>
+          <div>被风吹过的夏天、江南、一千年以后</div>
+
+        </div>
+      </div>
+    </div>
 
 	</div>
 
@@ -96,41 +132,6 @@
 			</div>
 		</div>
 	</div>
-<script type="text/javascript">
-window.onload = function() {
-    var oDiv = $('.tab,.tab2');
-    var oLi = oDiv.children('div')[0].getElementsByTagName("li");
-    var aCon = oDiv.children('div')[1].getElementsByTagName("div");
-    var timer;
-    for (var i = 0; i < oLi.length; i++) {
-        oLi[i].index = i;
-        oLi[i].onclick = function() {
-            show(this.index);
-        }
-    }
-    function show(a) {
-        index = a;
-        var alpha = 0;
-        for (var j = 0; j < oLi.length; j++) {
-            oLi[j].className = "";
-            aCon[j].className = "";
-            aCon[j].style.opacity = 0;
-            aCon[j].style.display = 'none';
-            aCon[j].style.filter = "alpha(opacity=0)";
-        }
-        oLi[index].className = "cur";
-        clearInterval(timer);
-        timer = setInterval(function() {
-            alpha += 2;
-            alpha > 100 && (alpha = 100);
-            aCon[index].style.opacity = alpha / 100;
-            aCon[index].style.display = 'block';
-            aCon[index].style.filter = "alpha(opacity=" + alpha + ")";
-            alpha == 100 && clearInterval(timer);
-        },
-        5)
-    }
-}
-</script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
