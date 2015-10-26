@@ -372,11 +372,11 @@ body{margin: 0 auto;}
 	height:460px;
 	overflow: hidden;
 }
-.tab .tabCon div{
+/* .tab .tabCon div{
 	position:absolute;
 	opacity:0;
 	filter:alpha(opacity=0);
-}
+} */
 .tab .tabList li.cur{
 	border-bottom:none;
 	color: #3873b9;
@@ -393,8 +393,225 @@ body{margin: 0 auto;}
 .detail .service_title{
 	color: #3872b9;
 }
+.hot_goods .service_title{
+	color: #3872b9;
+}
+.tabs-con {
+    text-align: center;
+    width: 100%;
+    
+    
+    overflow: hidden;
+}
+.tabs-con .slide-box1{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0px auto;
+}
+.slide-box1 .hd{
+    width: 100%;
+    
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+}
+.slide-box1 .tempWrap{
+    position: relative;
+    overflow: hidden;
+    left: 47px;
+    top: 0px;
+}
+.slide-box1 .hd ul li{
+    float: left;
+    list-style-type: none;
+    width: 228px;
+    height: 365px;
+    
+}
+.slide-box1 .hd ul li .pro-main{
+    /*margin: 15px;*/
+}
+.slide-box1 .hd ul li .pic{
+    width: 214px;
+    height: 340px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.slide-box1 .hd ul li .pic a{
+    /* width: 214px;
+    height: 340px; */
+    text-align: left;
 
+    vertical-align: middle;
+    display: table-cell;
+    color: #777;
+}
+.slide-box1 .hd ul li .pic a img{
+		margin: 10px 15px;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+.slide-box1 .hd ul li .protitle{
+    line-height: 20px;
+    text-align: center;
+    font-family: FuturaLTPro-Medium,"Microsoft YaHei", "微软雅黑",Arial,sans-serif;
+}
+.slide-box1 .prev,.slide-box1 .next{
+    position: absolute;
+    border-radius: 50%;
+    display: block;
+    background: url("../images/sprite2.png") 0px -456px no-repeat;
+    background-size: 45px 501px;
+    width: 45px;
+    height: 45px;
+    left: 0px;
+    top: 40%;
+}
+.slide-box1 .next{
+    left: auto;
+    right: 0px;
+    background-position: 0 -411px;
+}
+.star{
+    text-align: left;
+    width: 130px;
+    margin: 10px;
+}
+.comment_num{
+    position: relative;
+    top: -31px;
+    font-size: 13px;
+    color: #777;
+}
+.goods_title{
+    padding: 0 10px;
+    height: 40px;
+    overflow: hidden;
+}
+.goods_price{
+    font-size: 12px;
+    color: #3873b9;
+    text-align: left;
+    margin-left: 10px;
+    
+}
+.price_style{
+	font-size: 20px;
+	font-weight: bold;
+}
+.tab_div{
+	width: 1140px;
+	height: 458px;
+	border: 1px solid #ccc;
+	position: relative;
+}
+.bijiben{
+    width: 1138px;
+    border: 10px solid #fff;
+    border-width: 10px 0px 0px 10px;
+    border-spacing: 0px;
+}
+.bijiben tr td{
+	text-align: center;
+	font-size: 28px;
+	color: #3873b9;
+	border:solid #fff; 
+	border-width:0px 10px 10px 0px; 
+	padding:15px 0px;
+	background-color: #eeeeee;
+}
+.bijiben tr .row1{
+	width: 30%;
+	font-size: 32px;
+	padding: 15px 0;
+	font-weight: bold;
+	background-color: #dedede;
+}
+.bijiben tr .row2{
+	width: 30%;
+	font-size: 30px;
+	background-color: #dedede;
+	color: #3873b9;
+	font-weight: bold;
+}
+.bijiben tr .row3{
+	width: 40%;
+	font-size: 30px;
+	color: #3873b9;
+	font-weight: bold;
+	background-color: #dedede;
+}
+.tab_tips{
+	background-color: #fff;
+	padding: 10px;
+	color: #999;
+	font-size: 14px;
+}
+.mobile_title{
+	width: 100%;
+	color: #3873b9;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin: 30px 0;
+}
+.mobile_result{
+    position: absolute;
+    top: 43px;
+    right: 40px;
+    font-size: 25px;
+    color: #3873b9;
+    font-weight: bold;
+}
+.select_row{
+	overflow: hidden;
+}
+.option_col{
+	float: left;
+	width: 22%;
+	margin-right: 20px;
+}
+.select_row .col-md-3{
+	padding: 0 30px;
+}
+.option_col_title{
+    color: #3873b9;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.form-control option{
+	font-size: 18px;
 
+}
+.col-md-3 .form-control{
+		letter-spacing: 2px;
+    color: #3873b9;
+    font-weight: bold;
+}
+.row4{
+	width: 10%;
+}
+.row5{
+	width: 30%
+}
+.shengming_content{
+    font-size: 20px;
+    padding: 20px;
+    word-wrap: break-word;
+    height: 455px;
+    overflow: auto;
+    width: 1138px;
+
+}
+.order_check{
+	
+}
 .noright{
 	margin-right: 0;
 	padding-right: 0;

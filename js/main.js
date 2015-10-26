@@ -14,7 +14,7 @@ window.onload = function() {
         var alpha = 0;
         for (var j = 0; j < oLi.length; j++) {
             oLi[j].className = "";
-            aCon[j].className = "";
+            //aCon[j].className = "";
             aCon[j].style.opacity = 0;
             aCon[j].style.display = 'none';
             aCon[j].style.filter = "alpha(opacity=0)";
@@ -32,9 +32,10 @@ window.onload = function() {
         5)
     }
 
-    var oDiv2 = document.getElementById("tab2");
-    var oLi2 = oDiv2.getElementsByTagName("div")[0].getElementsByTagName("li");
-    var aCon2 = oDiv2.getElementsByTagName("div")[1].getElementsByTagName("div");
+    var oDiv2 = $('#tab2');
+    //var oLi2 = oDiv2.getElementsByTagName("div")[0].getElementsByTagName("li");
+    var oLi2 = $('#tab2').children('.tabList').find('li');
+    var aCon2 = oDiv2.children('.tabCon').children('.tab_div');
     var timer2;
     for (var i = 0; i < oLi2.length; i++) {
         oLi2[i].index = i;
@@ -47,7 +48,7 @@ window.onload = function() {
         var alpha2 = 0;
         for (var j = 0; j < oLi2.length; j++) {
             oLi2[j].className = "";
-            aCon2[j].className = "";
+            //aCon2[j].className = "";
             aCon2[j].style.opacity = 0;
             aCon2[j].style.display = 'none';
             aCon2[j].style.filter = "alpha2(opacity=0)";
