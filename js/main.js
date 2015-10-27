@@ -1,7 +1,7 @@
 window.onload = function() {
-    var oDiv = document.getElementById("tab");
-    var oLi = oDiv.getElementsByTagName("div")[0].getElementsByTagName("li");
-    var aCon = oDiv.getElementsByTagName("div")[1].getElementsByTagName("div");
+    var oDiv = $('#tab');
+    var oLi = $('#tab').children('.tabList').find('li');
+    var aCon = oDiv.children('.tabCon').children('.tab_div');
     var timer;
     for (var i = 0; i < oLi.length; i++) {
         oLi[i].index = i;
@@ -33,7 +33,6 @@ window.onload = function() {
     }
 
     var oDiv2 = $('#tab2');
-    //var oLi2 = oDiv2.getElementsByTagName("div")[0].getElementsByTagName("li");
     var oLi2 = $('#tab2').children('.tabList').find('li');
     var aCon2 = oDiv2.children('.tabCon').children('.tab_div');
     var timer2;
